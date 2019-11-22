@@ -9,10 +9,13 @@
 #include <linux/module.h>
 #include <linux/init.h>
 
+static int on_start(void);
+static void on_finish(void);
+
 static int on_start()
 {
 	printk(KERN_INFO "Inicializando o modulo ...\n");
-	return -1;
+	return 0;
 }
 
 static void on_finish()
