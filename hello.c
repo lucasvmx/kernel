@@ -25,3 +25,7 @@ static void on_finish()
 
 module_init(on_start);
 module_exit(on_finish);
+
+MODULE_LICENSE("Proprietary");
+MODULE_AUTHOR("Lucas Vieira");
+MODULE_DESCRIPTION("Estudo de módulos do linux kernel");
